@@ -13,4 +13,7 @@ Here is an example of DATABASE_URL : "postgresql+asyncpg://postgres:password@loc
 3).Download all dependencies via pip using the command:
   pip install -r requirements.txt
 
-4).Run app.py and that's it.
+4). Replace the values ​​of the variables on the lines:
+    465 , 588 , 873 , 914
+
+5).Run app.py and that's it.

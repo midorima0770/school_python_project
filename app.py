@@ -462,7 +462,6 @@ async def process_photo(message: Message, state: FSMContext):
     photo = message.photo[-1]
     file_id = photo.file_id
 
-    йцуйцуйцуйцуй
     save_dir = r"D:\work_11_img"
 
     os.makedirs(save_dir, exist_ok=True)
@@ -586,7 +585,6 @@ async def process_class_for_timetable(message: Message, state: FSMContext):
                 await message.answer(f"Расписание для класса {class_name} еще не добавлено.")
                 return
 
-            йцуйцуйцуйц
             # Проверяем существование файла
             file_path = rf"D:\work_11_img\{school_name}_{class_name}.jpg"
             
@@ -872,7 +870,6 @@ async def waiting_for_file_book(message: types.Message, state: FSMContext):
         await message.answer("Запрос отменен.", reply_markup=remove_keyboard)
         return
 
-    уйцуйцуйц
     save_dir = r"D:\work_11_books"
     os.makedirs(save_dir, exist_ok=True)
 
@@ -914,7 +911,6 @@ async def waiting_for_name_book_get(message: types.Message, state: FSMContext):
         await message.answer("Запрос отменен.", reply_markup=remove_keyboard)
         return
 
-    йцуйцуй
     books_dir = r"D:\work_11_books"
 
     name_book = message.text.strip()
