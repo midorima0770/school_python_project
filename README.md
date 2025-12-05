@@ -1,19 +1,40 @@
-This is a telegram bot project on the aiogram + sqlalchemy framework that I wrote for a school project.
+Telegram Bot Project (Aiogram + SQLAlchemy)
 
-1).Therefore, at the beginning, after pull, create a .env file in which you pass the following values:
-    TOKEN
-    DATABASE_URL 
-    ADMIN_ID_TG
-    SAVE_DIR
+This project is a Telegram bot built using Aiogram and SQLAlchemy, developed as a school project.
 
-Here is an example of DATABASE_URL : "postgresql+asyncpg://postgres:password@localhost:5432/tg_bot"
+🚀 Installation & Setup
+1️⃣ Create a .env file
 
-2).The next step is to create venv and activate it.
+After cloning the repository, create a .env file in the root directory and set the following variables:
 
-3).Download all dependencies via pip using the command:
-  pip install -r requirements.txt
+TOKEN=your_bot_token
+DATABASE_URL=postgresql+asyncpg://postgres:password@localhost:5432/tg_bot
+ADMIN_ID_TG=your_admin_id
+SAVE_DIR=your_directory_for_saving_files
 
-4). Replace the values ​​of the variables on the lines:
-    465 , 588 , 873 , 914
 
-5).Run app.py and that's it.
+Example DATABASE_URL:
+
+postgresql+asyncpg://postgres:password@localhost:5432/tg_bot
+
+2️⃣ Create and activate a virtual environment
+python -m venv venv
+# Linux / macOS
+source venv/bin/activate
+# Windows PowerShell
+.\venv\Scripts\Activate.ps1
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Update variable values in the code
+
+Replace the values of variables at the following lines:
+
+465, 588, 873, 914
+
+5️⃣ Run the bot
+python app.py
+
+
+🎉 The bot is now running and ready to use!
